@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kixel - Streamer & Competitivo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/perfil.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+window.addEventListener('load', function() {
+    const preloader = document.getElementById('preloader');
+    // Espera mínimo 2 segundos antes de desaparecer
+    setTimeout(() => {
+        preloader.classList.add('hidden');
+        setTimeout(() => preloader.remove(), 1500); // coincide con la transición
+    }, 1111);
+});
+</script>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div class="loader"></div>
+</div>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="img/perfil.jpg" alt="Perfil" class="logo-img">
+                <div class="logo-text">Kixel</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#setup">Mi Setup</a></li>
+                <li><a href="#config">Configuración</a></li>
+                <li><a href="#fortnite">Fortnite Tracker</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Hola, soy <span>Alex tambien conocido como "Kixel"</span></h1>
+            <p>Jugador competitivo de Fortnite y creador de contenido.</p>
+            <div class="social-buttons">
+                <a href="https://www.tiktok.com/@kixelfn" target="_blank" class="btn-social">
+                    <img src="img/icons/tiktok.png" alt="TikTok">
+                    <span>TikTok</span>
+                </a>
+                <a href="https://www.youtube.com/@kixelfn" target="_blank" class="btn-social">
+                    <img src="img/icons/youtube.png" alt="YouTube">
+                    <span>YouTube</span>
+                </a>
+                <a href="https://www.twitch.tv/7kixel" target="_blank" class="btn-social">
+                    <img src="img/icons/twitch.png" alt="Twitch">
+                    <span>Twitch</span>
+                </a>
+                <a href="https://www.instagram.com/k1xel" target="_blank" class="btn-social">
+                    <img src="img/icons/instagram.png" alt="Instagram">
+                    <span>Instagram</span>
+                </a>
+                <a href="https://discord.gg/Pjv8HuVAx3" target="_blank" class="btn-social">
+                    <img src="img/icons/discord.png" alt="Discord">
+                    <span>Discord Server</span>
+                </a>
+                <a href="https://x.com/7kixel" target="_blank" class="btn-social">
+                    <img src="img/icons/twitter.png" alt="X">
+                    <span>Twitter</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <h2>Sobre mí</h2>
+            <p>Me llamo Alexander Nuñez, tengo 16 años y vivo en Buenos Aires, Argentina.</p>
+            <p>Soy jugador competitivo de Fortnite con <span>$0 earnings</span> y creador de contenido.</p>
+            <p>Mi pasión es el gaming y compartir mis experiencias con la comunidad.</p>
+        </div>
+    </section>
+
+    <!-- SETUP COMPLETO -->
+    <section id="setup" class="setup">
+        <div class="container">
+            <h2>Mi Setup</h2>
+
+            <!-- PC SPECS -->
+            <h3 class="setup-category">PC Specs</h3>
+            <div class="setup-grid">
+                <a href="pc/cpu.html" class="setup-card">
+                    <img src="img/cpu.png" alt="CPU">
+                    <h4>AMD RYZEN 5 5600G</h4>
+                </a>
+                <a href="pc/motherboard.html" class="setup-card">
+                    <img src="img/motherboard.png" alt="Placa Madre">
+                    <h4>ASUS A520M GAMING PLUS WIFI</h4>
+                </a>
+                <a href="pc/cooler.html" class="setup-card">
+                    <img src="img/cooler.png" alt="Cooler">
+                    <h4>HYPER 212 BLACK X DUO</h4>
+                </a>
+                <a href="pc/ram.html" class="setup-card">
+                    <img src="img/ram.png" alt="Memoria RAM">
+                    <h4> PATRIOT VIPER STEEL RGB DDR4 (2x8GB)</h4>
+                </a>
+                <a href="pc/storage.html" class="setup-card">
+                    <img src="img/almacenamiento.png" alt="Almacenamiento">
+                    <h4>PATRIOT P300 1TB M2 NVME GEN3</h4>
+                </a>
+                <a href="pc/gpu.html" class="setup-card">
+                    <img src="img/gpu.png" alt="GPU">
+                    <h4>NVIDIA GTX 1660 TI PALIT DUAL 6GB</h4>
+                </a>
+                <a href="pc/psu.html" class="setup-card">
+                    <img src="img/psu.png" alt="Fuente de Poder">
+                    <h4>700W THERMALTAKE SMART 80 PLUS WHITE</h4>
+                </a>
+                <a href="pc/case.html" class="setup-card">
+                    <img src="img/case.png" alt="Gabinete">
+                    <h4>MSI MAG FORGE M100A </h4>
+                </a>
+            </div>
+
+            <!-- SETUP & STREAMING -->
+            <h3 class="setup-category">Setup & Streaming</h3>
+            <div class="setup-grid">
+                <a href="streaming/webcam.html" class="setup-card">
+                    <img src="img/webcam.png" alt="Webcam">
+                    <h4>LOGITECH C920S HD PRO</h4>
+                </a>
+                <a href="streaming/microphone.html" class="setup-card">
+                    <img src="img/mic.png" alt="Micrófono">
+                    <h4>JBL QUANTUM STREAM</h4>
+                </a>
+            </div>
+
+            <!-- GEAR -->
+            <h3 class="setup-category">Gear</h3>
+            <div class="setup-grid">
+                <a href="gear/monitor.html" class="setup-card">
+                    <img src="img/monitor.png" alt="Monitor">
+                    <h4>SAMSUNG ODYSSEY G4 </h4>
+                </a>
+                <a href="gear/mouse.html" class="setup-card">
+                    <img src="img/mouse.png" alt="Mouse">
+                    <h4>ATTACK SHARX X3</h4>
+                </a>
+                <a href="gear/keyboard.html" class="setup-card">
+                    <img src="img/keyboard.png" alt="Teclado">
+                    <h4>IROK MERCURY 68</h4>
+                </a>
+                <a href="gear/mousepad.html" class="setup-card">
+                    <img src="img/mousepad.png" alt="Mousepad">
+                    <h4>ARTISAN NINJA FX ZERO SOFT</h4>
+                </a>
+                <a href="gear/headset.html" class="setup-card">
+                    <img src="img/headset.png" alt="Auriculares">
+                    <h4>KZ EDX PRO</h4>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONFIGURACIÓN DE FORTNITE -->
+   <section id="config" class="config">
+    <div class="container">
+        <h2>Configuración de Fortnite</h2>
+        <div class="config-grid">
+            <div class="config-card">
+                <h3>Mouse</h3>
+                <p>DPI: 1600</p>
+                <p>Tasa de Sondeo: 1000Hz</p>
+                <p>Sensibilidad X: 3,3%</p>
+                <p>Sensibilidad Y: 3,3%</p>
+                <p>Sensibilidad al Apuntar: 50,1%</p>
+                <p>Sensibilidad al Apuntar con Mira: 50,1%</p>
+                <p>Sensibilidad de Construcción: 100,0%</p>
+                <p>Sensibilidad de Edición: 100,0%</p>
+            </div>
+
+            <div class="config-card">
+                <h3>Teclas</h3>
+                <p>Construir: 0</p>
+                <p>Pared: Botón 5 del Mouse</p>
+                <p>Piso: V</p>
+                <p>Escalera: Botón 4 del Mouse</p>
+                <p>Techo: L-Shift</p>
+                <p>Trampa: F</p>
+                <p>Editar: E</p>
+            </div>
+
+            <div class="config-card">
+                <h3>Movimiento</h3>
+                <p>Correr: Shift</p>
+                <p>Agacharse: Ctrl</p>
+                <p>Correr Automáticamente: Activado</p>
+                <p>Saltar: Espacio</p>
+            </div>
+
+            <div class="config-card">
+                <h3>Combate</h3>
+                <p>Ranura Pico 1: 1</p>
+                <p>Ranura Arma 1: Q</p>
+                <p>Ranura Arma 2: 2</p>
+                <p>Ranura Arma 3: 3</p>
+                <p>Ranura Arma 4: X</p>
+                <p>Ranura Arma 5: C</p>
+                <p>Disparar: Botón izquierdo</p>
+                <p>Apuntar: Botón derecho</p>
+            </div>
+
+            <div class="config-card">
+                <h3>Construcción</h3>
+                <p>Restablecer Elección de Construcción: Scroll hacia abajo</p>
+                <p>Confirmar Edición al Soltar: Activado</p>
+                <p>Construcción Turbo: Activado</p>
+            </div>
+
+            <div class="config-card">
+                <h3>Configuración de Video</h3>
+                <p>Resolución: 1920x1080</p>
+                <p>FPS: 240FPS</p>
+                <p>Relación de Aspecto: 16:9</p>
+            </div>
+
+            <div class="config-card">
+                <h3>Pantalla</h3>
+                <p>Brillo: 100%</p>
+                <p>Escala HUD: 70,0%</p>
+                <p>Modo Daltonismo: Desactivado</p>
+            </div>
+
+            <div class="config-card">
+                <h3>Calidad Gráfica</h3>
+                <p>Distancia de Visión: ALTA</p>
+                <p>Texturas: BAJA</p>
+                <p>Sombras: Desactivadas</p>
+                <p>Anti-Aliasing: Desactivado</p>
+                <p>Post Procesamiento: Bajo</p>
+                <p>Efectos: Bajo</p>
+                <p>V-Sync: Desactivado</p>
+            </div>
+
+            <div class="config-card">
+                <h3>Gráficos Avanzados</h3>
+                <p>Modo de Renderizado: Rendimiento</p>
+                <p>Motion Blur: Desactivado</p>
+                <p>Mostrar FPS: Activado</p>
+                <p>Moso Daltonismo: Desactivado</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- FORTNITE TRACKER -->
+    <section id="fortnite" class="fortnite">
+        <div class="container">
+            <h2>Mi Fortnite Tracker</h2>
+            <a href="https://fortnitetracker.com/profile/all/KIXEL%20GOTY" target="_blank" class="btn">Ver
+                estadísticas</a>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-label">Email:</span>
+                    <span class="contact-link" id="email">7kixel@gmail.com</span>
+                    <button class="copy-btn" onclick="copyToClipboard('email')">Copiar</button>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Teléfono:</span>
+                    <span class="contact-link" id="telefono">+54 9 XX XXX XXXX</span>
+                    <button class="copy-btn" onclick="copyToClipboard('telefono')">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="img/perfil.jpg" alt="Perfil" class="footer-img">
+                    <span>Kixel</span>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://www.tiktok.com/@kixelfn" target="_blank"><img src="img/icons/tiktok.png"
+                            alt="TikTok"></a>
+                    <a href="https://www.youtube.com/@kixelfn" target="_blank"><img src="img/icons/youtube.png"
+                            alt="YouTube"></a>
+                    <a href="https://www.twitch.tv/7kixel" target="_blank"><img src="img/icons/twitch.png"
+                            alt="Twitch"></a>
+                    <a href="https://www.instagram.com/k1xel" target="_blank"><img src="img/icons/instagram.png"
+                            alt="Instagram"></a>
+                    <a href="https://discord.gg/Pjv8HuVAx3" target="_blank"><img src="img/icons/discord.png"
+                            alt="Discord"></a>
+                    <a href="https://x.com/7kixel" target="_blank"><img src="img/icons/twitter.png"
+                            alt="X"></a>
+                </div>
+            </div>
+            <p class="footer-copy">&copy; 2025 Kixel. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function copyToClipboard(id) {
+            const text = document.getElementById(id).textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                alert(id === 'email' ? 'Email copiado' : 'Teléfono copiado');
+            });
+        }
+    </script>
+
+    <script src="js/script.js"></script>
+    
+</body>
+
+</html>

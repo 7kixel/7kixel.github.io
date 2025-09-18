@@ -1,0 +1,363 @@
+/* Reset & base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #0d0d0d;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo con foto */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #e10600;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.nav-links a:hover {
+    color: #e10600;
+}
+
+/* Hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/hero-bg.jpg') center/cover no-repeat;
+    text-align: center;
+    padding: 0 20px;
+}
+.hero h1 {
+    font-size: 3rem;
+}
+.hero h1 span {
+    color: #e10600;
+}
+.hero p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+/* BOTONES REDES SOCIALES HERO */
+.social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.btn-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #fff;
+    background: #1a1a1a;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.btn-social img {
+    width: 30px;
+    height: 30px;
+}
+.btn-social:hover {
+    background: #e10600;
+    color: #fff;
+}
+
+/* BOTON GENÉRICO */
+.btn {
+    background: #e10600;
+    padding: 12px 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: #fff;
+    color: #e10600;
+}
+
+/* SECTIONS */
+section {
+    padding: 100px 5%;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ABOUT */
+.about p {
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+/* SETUP */
+.setup-category {
+    font-size: 2rem;
+    color: #e10600;
+    margin: 50px 0 20px;
+    text-align: left;
+}
+.setup-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+.setup-card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+.setup-card img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción original */
+    max-height: 150px; /* Limita el tamaño máximo */
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.setup-card h4 {
+    margin-top: 5px;
+}
+.setup-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #e10600;
+}
+
+/* CONFIGURACIÓN DE FORTNITE */
+.config {
+    background-color: #121212;
+    padding: 100px 5%;
+    text-align: center;
+}
+.config h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+.config-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.config-card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    text-align: left;
+}
+.config-card:hover {
+    transform: scale(1.03);
+}
+.config-card h3 {
+    margin-bottom: 10px;
+    color: #e10600;
+}
+
+/* FORTNITE TRACKER */
+.fortnite {
+    text-align: center;
+}
+.fortnite h2 {
+    margin-bottom: 20px; /* ajusta la separación entre título y botón */
+}
+
+/* CONTACTO */
+.contact {
+    background-color: #0a0a0a;
+    text-align: center;
+}
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.contact-item {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contact-link {
+    color: #e10600;
+    font-weight: 600;
+}
+.copy-btn {
+    background: #fff;
+    color: #e10600;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.copy-btn:hover {
+    background: #e10600;
+    color: #fff;
+}
+
+/* FOOTER */
+footer {
+    background: #0a0a0a;
+    padding: 40px 5%;
+    color: #fff;
+    text-align: center;
+}
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.footer-socials a {
+    margin: 0 5px;
+    display: inline-block;
+}
+.footer-socials img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s;
+}
+.footer-socials img:hover {
+    transform: scale(1.2);
+}
+.footer-copy {
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px){
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        background: rgba(0,0,0,0.9);
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    .nav-active {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+    }
+}
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    transition: opacity 1.5s ease; /* más lenta */
+}
+
+#preloader.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.loader {
+    border: 5px solid #1a1a1a;
+    border-top: 5px solid #e10600;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
